@@ -3,6 +3,7 @@ import Navbar from "./components/Navbar";
 import styled from 'styled-components'
 import bg from './assets/bg.png'
 import Homepage from "./components/Homepage";
+import Aboutus from "./components/Aboutus";
 
 function App() {
   return (
@@ -13,10 +14,11 @@ function App() {
           <Navbar />
 
           <Homepage/>
+         
         </Wrapper>
-
+     
       </Container>
-
+     
     </>
 
   );
@@ -24,7 +26,7 @@ function App() {
 
 const Container = styled.div`
   background : #ffffff;
-  position :absolute;
+  position :fixed;
   top:0;
   left:0;
   bottom:0;
