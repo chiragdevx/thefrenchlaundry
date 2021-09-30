@@ -9,7 +9,7 @@ function Navbar() {
             <nav className="navbar   navbar-expand-lg navbar-light  ">
 
 
-                <div className="collapse navbar-collapse ms-5 mt-5" id="navbarSupportedContent">
+                <div className="collapse navbar-collapse ms-5 mt-5 mb-5" id="navbarSupportedContent">
                     <ul className="navbar-nav mr-auto ">
                         <li className="nav-item active">
                             <h5 className="nav-link text-white" href="#">Home </h5>
