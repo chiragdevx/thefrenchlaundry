@@ -1,6 +1,7 @@
 import React from 'react'
 import 'bootstrap/dist/css/bootstrap.css';
 import styled from 'styled-components';
+import { ProductButton } from './Products/ProductsElements';
 
 
 function Navbar() {
@@ -28,9 +29,9 @@ function Navbar() {
                         </li>
 
                     </ul>
-                    <Button className="btn  position-absolute top-0 end-0 me-5">
+                    <ProductButton className="btn  position-absolute top-0 end-0 me-5">
                         BOOK A TABLE
-                    </Button>
+                    </ProductButton>
 
                 </div>
             </nav>

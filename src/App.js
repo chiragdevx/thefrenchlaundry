@@ -1,50 +1,42 @@
-
 import Navbar from "./components/Navbar";
-import styled from 'styled-components'
-import bg from './assets/bg.png'
+import { BrowserRouter as Router } from "react-router-dom";
+import styled from "styled-components";
+import bg from "./assets/bg.png";
 import Homepage from "./components/Homepage";
-import Aboutus from "./components/Aboutus";
+import Products from "./components/Products";
+import Feature from "./components/Feature";
+import Footer from "./components/Footer";
+import { productData, productDataTwo } from "./components/Products/data";
+
+import { GlobalStyle } from "./globalStyles";
 
 function App() {
   return (
     <>
-      <Container>
+      <Router>
+        <GlobalStyle />
         <Wrapper>
-
           <Navbar />
-
-          <Homepage/>
-         
+          <Homepage />
         </Wrapper>
-     
-      </Container>
-     
+        <Products heading="Choose your favorite" data={productData} />
+        <Feature />
+        <Products heading="Sweet Treats for You" data={productDataTwo} />
+        <Footer />
+      </Router>
     </>
-
   );
 }
 
-const Container = styled.div`
-  background : #ffffff;
-  position :fixed;
-  top:0;
-  left:0;
-  bottom:0;
-  right:0;
 
-`;
 
 const Wrapper = styled.div`
-background-image: url(${bg});
-width:100%;
-height: 100%;
-background-size:cover;
-background-position:center;
-background-repeat: no-repeat;
+  background-image: url(${bg});
+  width: 100%;
+  height: 100vh;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 `;
 
 export default App;
-
-
-
-
